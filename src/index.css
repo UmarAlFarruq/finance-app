@@ -1,13 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: FondMontserrat;
+  src: url(./assets/fonts/FiraCode-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #0d263b;
+  --secondaryColor: #696969;
+  --activeColor: #0061df;
+
+  --width: 1920px;
+  --Fond: FondMontserrat;
+}
+.globalWidth{
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  /* line-height: 24px; */
+  /* text-align: center; */
+  letter-spacing: -0.02em;
+  color: #0d263b;
+}
+
+.subTitle {
+  font-family: 'Montserrat';
+  font-family: var(--Font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  /* line-height: 24px; */
+  /* text-align: center; */
+  color: #0d263b;
+}
+
+.description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 24px; */
+  color: #696969;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.nocopy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} 
+.alice-carousel__stage{
+  display: flex;
+  gap: 20px;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.recharts-responsive-container{
+  height: 85vh!important;
+  width: 1100px!important;
 }
